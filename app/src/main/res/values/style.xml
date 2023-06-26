@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@drawable/bottom_menu_item_background</item> <!-- Warna latar belakang -->
+        <item name="itemBackground">@android:color/white</item> <!-- Drawable latar belakang item -->
+        <item name="itemIconTint">@android:color/black</item> <!-- Warna ikon -->
+        <item name="itemTextColor">@android:color/black</item> <!-- Warna teks -->
+    </style>
+</resources>

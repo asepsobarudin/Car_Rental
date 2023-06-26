@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Car Rental</string>
+    <array name="list_mesin">
+        <item>Jenis Mesin</item>
+        <item>Bensin</item>
+        <item>Disel</item>
+        <item>Listrik</item>
+    </array>
+
+    <array name="list_status">
+        <item>admin</item>
+        <item>user</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Add other theme attributes here -->
+    </style>
+</resources>

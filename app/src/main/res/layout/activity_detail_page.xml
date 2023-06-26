@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/pageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Detail"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/image_add"
+                    android:layout_margin="5dp"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <TableRow
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Mobil "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtNama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Mobil"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah Kursi "
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtKursi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kursi"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max Speed "
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Speed"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Mesin: "
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtMesin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mesin"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hargaPerHari"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harga Per Hari "
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtHargaPerHari"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hari"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/waktuPinjam"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Waktu Peminjaman"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/edOrder"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:text="1"
+                                android:gravity="center"
+                                android:maxLength="2"
+                                android:inputType="number"
+                                android:textSize="14sp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/input_style"/>
+
+                            <TextView
+                                android:id="@+id/txtOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hari"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tanggalRental"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Rental"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/edTanggal"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Tangal Rental"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:focusableInTouchMode="false"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/input_style"
+                            android:onClick="setTanggal"/>
+
+                        <TextView
+                            android:id="@+id/txtTanggal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/namaUser"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama User"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtNamaUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama User"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/noHp"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Handphone"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08xx"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/alamat"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtAlamat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/totHarga"
+                        android:layout_marginVertical="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Harga"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtHarga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Harga"
+                            android:inputType="number"
+                            android:textSize="14sp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:text="Pesan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_green"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btnBatal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="20dp"
+                    android:text="Batalkan Pesanan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_danger"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
